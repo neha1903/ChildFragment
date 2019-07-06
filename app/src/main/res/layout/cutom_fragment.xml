@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            >
+
+            <ImageView
+                android:id="@+id/leftNav"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:src="@drawable/ic_arrow_left"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewPagerContainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2"
+            android:layout_marginTop="22dp"
+            >
+
+            <com.custom.innerfragments.CustomViewPager
+                android:id="@+id/inCustomViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            >
+
+            <ImageView
+                android:id="@+id/rightNav"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:src="@drawable/ic_arrow_right"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
